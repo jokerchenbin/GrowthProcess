@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_water_fall"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_8dp"
+    android:paddingLeft="@dimen/activity_vertical_8dp"
+    android:paddingRight="@dimen/activity_vertical_8dp"
+    android:paddingTop="@dimen/activity_vertical_8dp"
+    tools:context="com.cst.growthprocess.recyclerViewDemo.demoActivity.WaterFallActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/waterfall_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

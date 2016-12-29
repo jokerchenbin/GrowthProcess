@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_xfyun"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cst.growthprocess.xfyun.XfyunActivity">
+
+
+    <!--<TextView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/small_text"
+        android:layout_below="@+id/small_text"
+        android:layout_marginTop="@dimen/activity_vertical_8dp"
+        android:background="@drawable/circle_small_shape"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignTop="@+id/small_text"
+        android:layout_marginLeft="@dimen/activity_vertical_8dp"
+        android:layout_toRightOf="@+id/small_text"
+        android:background="@drawable/circle_small_shape" />-->
+
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@mipmap/main_tab_kartor_press"
+        android:gravity="center_horizontal"
+        android:text="驾图"
+        android:textSize="9dp" />
+
+    <TextView
+        android:id="@+id/small_text"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/main"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toRightOf="@+id/main"
+        android:background="@drawable/circle_small_shape"
+        android:gravity="center"
+        android:text="99+"
+        android:textColor="@color/white"
+        android:textSize="9dp" />
+
+
+    <TextView
+        android:id="@+id/main_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:drawableTop="@mipmap/main_tab_kartor_press"
+        android:gravity="center_horizontal"
+        android:text="驾图"
+        android:textSize="9dp" />
+
+    <TextView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/main_1"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toRightOf="@+id/main_1"
+        android:background="@drawable/circle_small_shape"
+        android:gravity="center"
+        android:text="99"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:id="@+id/main_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:drawableTop="@mipmap/main_tab_kartor_press"
+        android:gravity="center_horizontal"
+        android:text="驾图"
+        android:textSize="9dp" />
+
+    <TextView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/main_2"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toRightOf="@+id/main_2"
+        android:background="@drawable/circle_small_shape"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableRight="@drawable/circle_small_shape"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="@dimen/activity_vertical_8dp"
+        android:text="手机联系人"
+        android:textSize="24dp" />
+
+</RelativeLayout>

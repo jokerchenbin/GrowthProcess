@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/kplay_mine_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/kplay_mine_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/kplay_mine_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/kplay_mine_item_img"
+            android:paddingLeft="10dp"
+            android:textColor="@drawable/kplay_mine_item_txt_selector"
+            android:textSize="15dp" />
+
+        <com.cst.growthprocess.UI.SmallDotView
+            android:id="@+id/create_friend_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/kplay_mine_item_tv"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

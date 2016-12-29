@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:layout_margin="0.5dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp">
+
+
+    <ImageView
+        android:id="@+id/list_item_pic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/list_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_item_pic"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/list_item_pic"
+        android:maxLength="6"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="#333333"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/list_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/list_item_title"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/list_item_pic"
+        android:ellipsize="end"
+        android:maxLength="80"
+        android:text="内容区域" />
+
+</RelativeLayout>

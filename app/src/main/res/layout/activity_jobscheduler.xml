@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_jobscheduler"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context="com.cst.growthprocess.jobscheduler.JobschedulerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/header_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/public_acount_head_add_btn_selector" />
+
+
+        <ImageButton
+            android:id="@+id/header_right_icon_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="24dp"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/public_acount_head_add_btn_selector" />
+    </LinearLayout>
+
+</RelativeLayout>
