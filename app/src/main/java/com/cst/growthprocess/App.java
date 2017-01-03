@@ -70,6 +70,7 @@ public class App extends Application {
         Pro_List.add("第三方的视频播放控件Vitamio的使用");
         Pro_List.add("第三方科大讯飞语音");
         Pro_List.add("jobscheduler 保证进程存活");
+        Pro_List.add("文件的上传和下载");
     }
 
 

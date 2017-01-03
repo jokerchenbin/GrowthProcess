@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.cst.growthprocess.customview.PassDemoActivity;
+import com.cst.growthprocess.fileup_and_downlode.FileActivity;
 import com.cst.growthprocess.jobscheduler.JobschedulerActivity;
 import com.cst.growthprocess.pinyinpinyin4j.Pinyin4jActivity;
 import com.cst.growthprocess.recyclerViewDemo.RecyclerActivity;
@@ -68,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 13:
                 startActivity(new Intent(mContext, JobschedulerActivity.class));
+                break;
+            case 14:
+                startActivity(new Intent(mContext, FileActivity.class));
                 break;
             default:
         }

@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 读取联系人权限，上传联系人需要用到此权限 -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".App"
@@ -54,11 +54,13 @@
         <activity android:name=".recyclerViewDemo.demoActivity.GridViewActivity" />
         <activity android:name=".recyclerViewDemo.demoActivity.WaterFallActivity" />
         <activity android:name=".xfyun.XfyunActivity" />
-        <activity android:name=".jobscheduler.JobschedulerActivity"></activity>
+        <activity android:name=".jobscheduler.JobschedulerActivity" />
 
         <service
             android:name=".jobscheduler.MyJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".fileup_and_downlode.FileActivity"></activity>
     </application>
 
 </manifest>
