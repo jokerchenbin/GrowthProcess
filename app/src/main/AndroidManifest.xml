@@ -60,7 +60,8 @@
             android:name=".jobscheduler.MyJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <activity android:name=".fileup_and_downlode.FileActivity"></activity>
+        <activity android:name=".fileup_and_downlode.FileActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
