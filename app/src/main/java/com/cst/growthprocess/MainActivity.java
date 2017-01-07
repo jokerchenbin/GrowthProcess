@@ -16,6 +16,7 @@ import com.cst.growthprocess.pinyinpinyin4j.Pinyin4jActivity;
 import com.cst.growthprocess.recyclerViewDemo.RecyclerActivity;
 import com.cst.growthprocess.retrofit_okhttp.RetrofitActivity;
 import com.cst.growthprocess.vitamio.VitamioActivity;
+import com.cst.growthprocess.xUtils.XUtilsDemoActivity;
 import com.cst.growthprocess.xfyun.XfyunActivity;
 
 import butterknife.ButterKnife;
@@ -72,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 14:
                 startActivity(new Intent(mContext, FileActivity.class));
+                break;
+            case 15:
+                startActivity(new Intent(mContext, XUtilsDemoActivity.class));
                 break;
             default:
         }
