@@ -63,7 +63,11 @@
         <activity
             android:name=".fileup_and_downlode.FileActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".xUtils.XUtilsDemoActivity"
+        <activity
+            android:name=".xUtils.XUtilsDemoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment_viewpager.FragmentDemoActivity"
             android:screenOrientation="portrait" />
     </application>
 

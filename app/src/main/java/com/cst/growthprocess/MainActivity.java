@@ -11,6 +11,7 @@ import android.widget.ListView;
 
 import com.cst.growthprocess.customview.PassDemoActivity;
 import com.cst.growthprocess.fileup_and_downlode.FileActivity;
+import com.cst.growthprocess.fragment_viewpager.FragmentDemoActivity;
 import com.cst.growthprocess.jobscheduler.JobschedulerActivity;
 import com.cst.growthprocess.pinyinpinyin4j.Pinyin4jActivity;
 import com.cst.growthprocess.recyclerViewDemo.RecyclerActivity;
@@ -55,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 1:
                 startActivity(new Intent(mContext, RecyclerActivity.class));
+                break;
+            case 2:
+                startActivity(new Intent(mContext, FragmentDemoActivity.class));
                 break;
             case 9:
                 startActivity(new Intent(mContext, RetrofitActivity.class));
