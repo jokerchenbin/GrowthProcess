@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.cst.growthprocess.UI.viewTipModule.LoadingView
+            android:id="@+id/loading_v"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tip_text_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:gravity="center"
+            android:text="sss"
+            android:textColor="#FF333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:gravity="center"
+            android:text="加载中"
+            android:textColor="#FF333333"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

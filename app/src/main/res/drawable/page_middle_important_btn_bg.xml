@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下 -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/page_middle_important_Btn_press" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+    <!-- 禁用 -->
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/btn_bg_forbidden" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+    <!-- 普通状态 -->
+    <item>
+        <shape>
+            <solid android:color="@color/page_middle_important_Btn_normal" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+
+</selector>

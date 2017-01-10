@@ -22,6 +22,27 @@
     <color name="darker_violet">#ff4d3980</color>
     <color name="black">#000</color>
 
+    <color name="btn_text_color_black666">#ff666666</color>
+
+    <color name="ordinary_btn_bg_normal">#ffffff</color>
+    <color name="ordinary_btn_bg_press">#f0f0f0</color>
+    <color name="ordinary_btn_bg_corner">#e5e5e5</color>
+    <color name="ordinary_btn_text_yelow_normal">#ffae00</color>
+    <color name="ordinary_btn_text_yelow_press">#f0a400</color>
+    <color name="btn_bg_forbidden">#e5e5e5</color>
+
+    <color name="btn_text_color_white">#ffffffff</color>
+    <color name="page_middle_important_Btn_normal">#ffae00</color>
+    <color name="page_middle_important_Btn_press">#e59c00</color>
+
+    <!-- 分割线颜色值 -->
+    <color name="divider_line">#EAEAEA</color>
+
+    <color name="btn_edge_line">#dddddd</color>
+    <color name="btn_edge_line_eaeae">@color/divider_line</color>
+    <color name="btn_edge_line_yellow_normal">#ffae00</color>
+    <color name="btn_edge_line_yellow_press">#f0a400</color>
+
 
     <color name="kplay_mine_pressed_color">#363636</color>
 </resources>

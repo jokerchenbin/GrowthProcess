@@ -8,4 +8,100 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!--一般按钮，一般出现在商城和列表a-->
+    <style name="BaseNormalBottomStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_bg_corner_white</item>
+        <item name="android:textColor">@color/btn_text_color_black666</item>
+    </style>
+
+    <!--一般按钮，样式一-->
+    <style name="NormalBottomStyle1" parent="BaseNormalBottomStyle">
+        <item name="android:layout_width">172dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
+    <!--一般按钮，样式二-->
+    <style name="NormalBottomStyle2" parent="BaseNormalBottomStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:minWidth">94dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <!--一般按钮，样式三-->
+    <style name="NormalBottonStyle3" parent="BaseNormalBottomStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:minWidth">57dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!--一般按钮，样式四-->
+    <style name="NormalBottomStyle4" parent="BaseNormalBottomStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">29dp</item>
+        <item name="android:minWidth">43dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <!--一般按钮，样式五 黄色边框，黄色字体 最小宽度43dp-->
+    <style name="NormalBottomStyle5" parent="BaseNormalBottomStyle">
+        <item name="android:textColor">@color/normal_five_btn_text_yellow</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">29dp</item>
+        <item name="android:minWidth">43dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:background">@drawable/normal_five_btn_bg</item>
+    </style>
+
+
+    <!--页中重要按钮, 执行重要操作，一般出现在页面中，如登陆、注册、确认等按钮-->
+    <style name="BasePageMiddleImportantBtnStyle">
+        <item name="android:background">@drawable/page_middle_important_btn_bg</item>
+        <item name="android:textColor">@color/btn_text_color_white</item>
+    </style>
+
+    <!--页中重要按钮  满宽度match_parent-->
+    <style name="PageMiddleImportantBtnStyle1" parent="BasePageMiddleImportantBtnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!--页中重要按钮  宽度172dp-->
+    <style name="PageMiddleImportantBtnStyle2" parent="BasePageMiddleImportantBtnStyle">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">172dp</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!--页中重要按钮  宽度94dp-->
+    <style name="PageMiddleImportantBtnStyle3" parent="BasePageMiddleImportantBtnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:minWidth">94dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
 </resources>

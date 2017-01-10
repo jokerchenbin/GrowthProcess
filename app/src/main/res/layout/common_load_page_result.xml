@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical">
+    <!--提示图标icon-->
+    <ImageView
+        android:id="@+id/tip_img"
+        android:layout_width="185dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="64dp"
+        android:src="@mipmap/tip_without_network"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/no_data_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/no_data_main_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:text="主文本"
+            android:textColor="#333333"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/no_data_deputy_prompt_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:text="副文本"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#999999"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/no_data_deputy_prompt_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="副文本副文本副文本副文本副文本副文本副文本副文本副文本副文本"
+            android:textColor="#999999"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/no_data_extra_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:lineSpacingExtra="5dp"
+            android:visibility="gone"
+            android:text="补充文本补充文本补充文本补充文本补充文本补充文本补充文本补充文本补充文本补充文本补充文本补充文本补充文本"
+            android:textColor="#999999"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+            <!--一般按钮-->
+            <Button
+                android:id="@+id/no_data_common_btn1"
+                style="@style/NormalBottomStyle2"
+                android:layout_width="185dp"
+                android:layout_gravity="center_horizontal"
+                android:text="一般按钮"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp" />
+            <Button
+                android:id="@+id/no_data_common_btn2"
+                style="@style/NormalBottomStyle2"
+                android:layout_width="185dp"
+                android:layout_gravity="center_horizontal"
+                android:text="一般按钮"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp" />
+            <!--主要按钮-->
+            <Button
+                android:id="@+id/no_data_main_btn"
+                style="@style/PageMiddleImportantBtnStyle3"
+                android:layout_width="185dp"
+                android:text="重要按钮"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
