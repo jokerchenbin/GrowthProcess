@@ -22,4 +22,6 @@
     <string name="empty_data_suggest16">手势密码输入已超过5次，\n将被冻结12小时，请解冻后再次操作。</string>
 
     <string name="empty_data_no_search_result">没有搜索结果~</string>
+
+    <string name="path">M141,17 A9,9 0 1,1 142,16 L149,23</string>
 </resources>
