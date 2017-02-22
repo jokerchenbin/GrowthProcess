@@ -3,14 +3,16 @@ package com.cst.growthprocess.fragment_viewpager;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 
 import com.cst.growthprocess.R;
-import com.cst.growthprocess.UI.ViewPagerNoScroll;
+import com.cst.growthprocess.UI.IndicatorView;
+import com.cst.growthprocess.UI.ViewPagerIndicator;
 import com.cst.growthprocess.fragment_viewpager.adapter.ViewPagerAdapter;
 
 import java.util.ArrayList;
@@ -39,7 +41,14 @@ public class FragmentDemoActivity extends AppCompatActivity {
     RelativeLayout mActivityFragmentDemo;
 
     @InjectView(R.id.viewpager)
-    ViewPagerNoScroll mViewpager;
+    ViewPager mViewpager;
+
+
+    @InjectView(R.id.ll)
+    LinearLayout mLl;
+
+    @InjectView(R.id.indicatorView)
+    IndicatorView mIndicatorView;
 
     private Context mContext;
 
@@ -68,25 +77,32 @@ public class FragmentDemoActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getFragmentManager());
         adapter.setFragments(fragmentList);
         mViewpager.setAdapter(adapter);
+
+        ViewPagerIndicator indicator = new ViewPagerIndicator(mContext, mViewpager, mLl);
+        mViewpager.addOnPageChangeListener(indicator);
+
+        mIndicatorView.setViewPager(mViewpager);
+
+
         mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-               switch (checkedId){
-                   case R.id.tab1:
-                       mViewpager.setCurrentItem(0);
-                       break;
-                   case R.id.tab2:
-                       mViewpager.setCurrentItem(1);
-                       break;
-                   case R.id.tab3:
-                       mViewpager.setCurrentItem(2);
-                       break;
-                   case R.id.tab4:
-                       mViewpager.setCurrentItem(3);
-                       break;
-                   default:
-                       break;
-               }
+                switch (checkedId) {
+                    case R.id.tab1:
+                        mViewpager.setCurrentItem(0);
+                        break;
+                    case R.id.tab2:
+                        mViewpager.setCurrentItem(1);
+                        break;
+                    case R.id.tab3:
+                        mViewpager.setCurrentItem(2);
+                        break;
+                    case R.id.tab4:
+                        mViewpager.setCurrentItem(3);
+                        break;
+                    default:
+                        break;
+                }
 
             }
         });

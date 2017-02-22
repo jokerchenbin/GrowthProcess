@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_baidu_map"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cst.growthprocess.baidu_map.BaiduMapActivity">
+
+    <RelativeLayout
+        android:id="@+id/route_plan_header"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#3b3b3b"
+        android:paddingLeft="10dp">
+
+
+        <RadioGroup
+            android:id="@+id/header_center_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/radioButton_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/route_plan_person_selector"
+                android:button="@null"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioButton_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/route_plan_car_selector"
+                android:button="@null" />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:layout_below="@+id/route_plan_header"
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+</RelativeLayout>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:id="@+id/activity_pass_demo"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,5 +14,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true" />
+
+
+    <com.cst.growthprocess.customview.ui.ArrowGroup
+        android:id="@+id/arrowGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_pass_button"
+        android:layout_marginLeft="80dp"
+        app:mDistance="90dp"
+        app:mLocation="button" />
+
+
+    <Button
+        android:id="@+id/activity_pass_button"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:text="点击出现" />
 
 </RelativeLayout>

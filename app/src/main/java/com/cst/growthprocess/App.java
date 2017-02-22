@@ -73,6 +73,11 @@ public class App extends Application {
         Pro_List.add("第三方科大讯飞语音");
         Pro_List.add("jobscheduler 保证进程存活");
         Pro_List.add("文件的上传和下载");
+        Pro_List.add("Intent 的相关使用");
+        Pro_List.add("Bluetooth蓝牙的相关使用");
+        Pro_List.add("VectorDemo的相关使用");
+        Pro_List.add("android中相关文件目录访问");
+        Pro_List.add("百度地图路径规划");
     }
 
 

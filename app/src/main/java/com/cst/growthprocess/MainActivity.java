@@ -9,6 +9,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.cst.growthprocess.IntentDemo.IntentDemoActivity;
+import com.cst.growthprocess.VectorDemo.VectorCompatActivity;
+import com.cst.growthprocess.android_file_path.FilePathActivity;
+import com.cst.growthprocess.baidu_map.BaiduMapActivity;
+import com.cst.growthprocess.bluetoothDemo.BlueToothActivity;
 import com.cst.growthprocess.customview.PassDemoActivity;
 import com.cst.growthprocess.fileup_and_downlode.FileActivity;
 import com.cst.growthprocess.fragment_viewpager.FragmentDemoActivity;
@@ -79,7 +84,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(mContext, FileActivity.class));
                 break;
             case 15:
-                startActivity(new Intent(mContext, XUtilsDemoActivity.class));
+                startActivity(new Intent(mContext, IntentDemoActivity.class));
+                break;
+            case 16:
+                startActivity(new Intent(mContext, BlueToothActivity.class));
+                break;
+            case 17:
+                startActivity(new Intent(mContext, VectorCompatActivity.class));
+                break;
+            case 18://文件目录相关操作
+                startActivity(new Intent(mContext, FilePathActivity.class));
+                break;
+            case 19://文件目录相关操作
+                startActivity(new Intent(mContext, BaiduMapActivity.class));
                 break;
             default:
         }
